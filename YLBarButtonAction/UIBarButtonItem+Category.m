@@ -1,6 +1,6 @@
 //
 //  UIBarButtonItem+Category.m
-//  BlackCloset
+//  Yoon Lee
 //
 //  Created by Yoon Lee on 3/3/15.
 //  Copyright (c) 2015 Yoon Lee. All rights reserved.

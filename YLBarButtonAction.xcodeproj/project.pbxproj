@@ -1,0 +1,90 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		6B532E2B1AFD40C90072D266 /* NSObject+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Category.h"; sourceTree = "<group>"; };
+		6B532E2C1AFD40C90072D266 /* NSObject+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Category.m"; sourceTree = "<group>"; };
+		6B532E2D1AFD40C90072D266 /* NSString+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Category.h"; sourceTree = "<group>"; };
+		6B532E2E1AFD40C90072D266 /* NSString+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Category.m"; sourceTree = "<group>"; };
+		6B532E2F1AFD40C90072D266 /* UIBarButtonItem+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Category.h"; sourceTree = "<group>"; };
+		6B532E301AFD40C90072D266 /* UIBarButtonItem+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Category.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		6B532E231AFD40750072D266 = {
+			isa = PBXGroup;
+			children = (
+				6B532E2A1AFD40BC0072D266 /* YLBarButtonAction */,
+			);
+			sourceTree = "<group>";
+		};
+		6B532E2A1AFD40BC0072D266 /* YLBarButtonAction */ = {
+			isa = PBXGroup;
+			children = (
+				6B532E2B1AFD40C90072D266 /* NSObject+Category.h */,
+				6B532E2C1AFD40C90072D266 /* NSObject+Category.m */,
+				6B532E2D1AFD40C90072D266 /* NSString+Category.h */,
+				6B532E2E1AFD40C90072D266 /* NSString+Category.m */,
+				6B532E2F1AFD40C90072D266 /* UIBarButtonItem+Category.h */,
+				6B532E301AFD40C90072D266 /* UIBarButtonItem+Category.m */,
+			);
+			path = YLBarButtonAction;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		6B532E241AFD40750072D266 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+			};
+			buildConfigurationList = 6B532E271AFD40750072D266 /* Build configuration list for PBXProject "YLBarButtonAction" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6B532E231AFD40750072D266;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		6B532E281AFD40750072D266 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		6B532E291AFD40750072D266 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6B532E271AFD40750072D266 /* Build configuration list for PBXProject "YLBarButtonAction" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B532E281AFD40750072D266 /* Debug */,
+				6B532E291AFD40750072D266 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6B532E241AFD40750072D266 /* Project object */;
+}

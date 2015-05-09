@@ -9,7 +9,7 @@
 #import "UIBarButtonItem+Category.h"
 #import <objc/runtime.h>
 
-static char BBBarButtonItemActionBlockKey;
+static char YLBarButtonItemActionBlockKey;
 
 @implementation UIBarButtonItem (Category)
 
@@ -18,10 +18,10 @@ static char BBBarButtonItemActionBlockKey;
     if (self = [self initWithImage:image
                              style:style
                             target:nil
-                            action:@selector(BBActionSelectorBlockWithSender:)]) {
+                            action:@selector(YLActionSelectorBlockWithSender:)]) {
         // it is block associating object. therefore, it should use `copy`
-        objc_setAssociatedObject(self, &BBBarButtonItemActionBlockKey, action, OBJC_ASSOCIATION_COPY_NONATOMIC);
-        [self setTarget:objc_getAssociatedObject(self, &BBBarButtonItemActionBlockKey)];
+        objc_setAssociatedObject(self, &YLBarButtonItemActionBlockKey, action, OBJC_ASSOCIATION_COPY_NONATOMIC);
+        [self setTarget:objc_getAssociatedObject(self, &YLBarButtonItemActionBlockKey)];
     }
     
     return self;
@@ -29,10 +29,10 @@ static char BBBarButtonItemActionBlockKey;
 
 - (instancetype)initWithTitle:(NSString *)title style:(UIBarButtonItemStyle)style actionBlock:(void (^)(id))action
 {
-    if (self = [self initWithTitle:title style:style target:nil action:@selector(BBActionSelectorBlockWithSender:)]) {
+    if (self = [self initWithTitle:title style:style target:nil action:@selector(YLActionSelectorBlockWithSender:)]) {
         // it is block associating object. therefore, it should use `copy`
-        objc_setAssociatedObject(self, &BBBarButtonItemActionBlockKey, action, OBJC_ASSOCIATION_COPY_NONATOMIC);
-        [self setTarget:objc_getAssociatedObject(self, &BBBarButtonItemActionBlockKey)];
+        objc_setAssociatedObject(self, &YLBarButtonItemActionBlockKey, action, OBJC_ASSOCIATION_COPY_NONATOMIC);
+        [self setTarget:objc_getAssociatedObject(self, &YLBarButtonItemActionBlockKey)];
     }
     
     return self;
@@ -40,10 +40,10 @@ static char BBBarButtonItemActionBlockKey;
 
 - (instancetype)initWithBarButtonSystemItem:(UIBarButtonSystemItem)systemItem actionBlock:(void (^)(id))action
 {
-    if (self = [self initWithBarButtonSystemItem:systemItem target:nil action:@selector(BBActionSelectorBlockWithSender:)]) {
+    if (self = [self initWithBarButtonSystemItem:systemItem target:nil action:@selector(YLActionSelectorBlockWithSender:)]) {
         // it is block associating object. therefore, it should use `copy`
-        objc_setAssociatedObject(self, &BBBarButtonItemActionBlockKey, action, OBJC_ASSOCIATION_COPY_NONATOMIC);
-        [self setTarget:objc_getAssociatedObject(self, &BBBarButtonItemActionBlockKey)];
+        objc_setAssociatedObject(self, &YLBarButtonItemActionBlockKey, action, OBJC_ASSOCIATION_COPY_NONATOMIC);
+        [self setTarget:objc_getAssociatedObject(self, &YLBarButtonItemActionBlockKey)];
     }
     
     return self;

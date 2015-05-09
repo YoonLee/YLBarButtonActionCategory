@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface NSObject_Category : NSObject
-- (void)BBActionBlock;
-- (void)BBActionSelectorBlockWithSender:(id)sender;
+- (void)YLActionBlock;
+- (void)YLActionSelectorBlockWithSender:(id)sender;
 @end

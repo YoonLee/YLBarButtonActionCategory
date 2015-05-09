@@ -10,12 +10,12 @@
 
 @implementation NSObject (Category)
 
-- (void)BBActionBlock
+- (void)YLActionBlock
 {
     ((void (^)())self)();
 }
 
-- (void)BBActionSelectorBlockWithSender:(id)sender
+- (void)YLActionSelectorBlockWithSender:(id)sender
 {
     ((void (^)(id))self)(sender);
 }
